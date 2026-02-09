@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>met mini gallery (p5.js)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1>met mini gallery</h1>
+
+    <div class="row">
+      <input id="query" type="text" value="mask" />
+      <button id="go">search</button>
+      <button id="rand">random keyword</button>
+    </div>
+
+    <div id="status" class="status">ready.</div>
+
+    <div id="canvas-holder"></div>
+
+    <p class="hint">
+      type a keyword like <b>mask</b>, <b>robot</b>, <b>portrait</b>, <b>myth</b>, <b>weaving</b>.
+      click an item in the list to load its image + details.
+    </p>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
